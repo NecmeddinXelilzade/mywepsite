@@ -1,0 +1,14 @@
+$breakpoints: (
+        'xs': 0,
+        'sm': 361,
+        'md': 769,
+        'lg': 1367,
+        'xl': 1537,
+        'xxl': 1921,
+);
+
+:export {
+  @each $key, $value in $breakpoints {
+    breakpoints_#{unquote($key)}: $value;
+  }
+}

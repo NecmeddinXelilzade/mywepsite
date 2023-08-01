@@ -1,0 +1,43 @@
+@import "../../responsive";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // flex-direction: column;
+  position: relative;
+ flex-direction: row;
+
+  // @include md {
+    // flex-direction: row;
+  // }
+
+}
+
+
+.route {
+  margin: 0 20px;
+}
+
+.routes {
+  @extend .container;
+  justify-content: space-between;
+
+}
+.container{
+  // margin:20px 0;
+  height: 100px;
+  background-color: white;
+}
+
+
+.rightItems {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  align-items: center;
+}
+
+.logout {
+  margin-left: 10px;
+}
