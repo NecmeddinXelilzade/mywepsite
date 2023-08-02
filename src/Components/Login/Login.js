@@ -6,8 +6,8 @@ import styles from './Login.module.scss'
 const Login = () => {
     const dispatch = useDispatch();
     const [userData, setUserData] = useState({
-        username: '',
-        password: ''
+        username: 'mor_2314',
+        password: '83r5^_'
     })
 
     const onChangeUserName = (e) => {
