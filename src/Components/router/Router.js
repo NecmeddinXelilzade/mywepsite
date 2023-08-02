@@ -14,12 +14,7 @@ const Router = () => {
     return (
         <div className={styles.container}>
             {/* <img src={download}/> */}
-                <BrowserRouter>
-                   <Routes>
-                      <Route path ='' element={<Navbar />} > </Route>
-                   </Routes>
-
-                   </BrowserRouter>
+                 
                    <BrowserRouter>
                 <Routes>
                         <Route path='/' element={<Layout />}>

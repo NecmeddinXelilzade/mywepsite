@@ -2,17 +2,15 @@
 
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  // flex-direction: column;
-  position: relative;
  flex-direction: row;
+  // position: relative; 
+   height: 100px;
+  background-color:rgb(193, 198, 96)
+  }
 
-  // @include md {
-    // flex-direction: row;
-  // }
 
-}
 
 
 .route {
@@ -21,19 +19,14 @@
 
 .routes {
   @extend .container;
-  justify-content: space-between;
+  // justify-content: space-between;
 
-}
-.container{
-  // margin:20px 0;
-  height: 100px;
-  background-color: white;
 }
 
 
 .rightItems {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 60%;
   align-items: center;
 }

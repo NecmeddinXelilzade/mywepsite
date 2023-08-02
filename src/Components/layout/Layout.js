@@ -8,6 +8,7 @@ import BurgerMenu from "../BurgerMenu/Sidebar";
 import Home from "../Home/Home";
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
+import Navbar from '../Navbar/Navbar';
 
 const languageOptions = [
     {
@@ -70,24 +71,27 @@ const Layout = () => {
 
     return (
         <>
-            <nav>
-                <div className={styles.container}>
-                    {
-                    //  goster ?
+            <nav >
+                 <div>
+                     {/* <div>
+                        <Navbar/>
+                     </div> */}
+
+                     <div className={styles.container}>
+                    
                         <div className={styles.routes}>
                            <div className={styles.route}>
-                                <Link to="/products">Products</Link>
+                                <Link productsto="/">Products</Link>
                             </div>
 
                             <div className={styles.route}>
-                                <Link to="/">Home</Link>
+                                <Link to="/" >Carusel</Link>
                             </div>
                             
                         </div> 
-                        // : null
-                        // <BurgerMenu/>
-                    }
-                    <div className={styles.rightItems}>
+                    
+                     <div>
+                          <div className={styles.rightItems}>
                         <select onChange={onLanguageChange} value={currentLang}>
                             {
                                 languageOptions.map((language) => <option key={language.value} value={language.value}>{language.label}</option>)
@@ -99,7 +103,12 @@ const Layout = () => {
                         <div>{basketProducts.length}</div>
                         <LogoutOutlined onClick={onLogoutClick} className={styles.logout}/>
                     </div>
-                </div>
+                     </div>
+                  
+                    </div>
+
+              </div>
+
             </nav>
             <Outlet/>
         </>

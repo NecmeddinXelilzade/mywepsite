@@ -1,0 +1,32 @@
+:export {
+  breakpoints_xs: 0;
+  breakpoints_sm: 361;
+  breakpoints_md: 769;
+  breakpoints_lg: 1367;
+  breakpoints_xl: 1537;
+  breakpoints_xxl: 1921;
+}
+
+.container, .routes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 100px;
+  background-color: rgb(193, 198, 96);
+}
+
+.route {
+  margin: 0 20px;
+}
+
+.rightItems {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  align-items: center;
+}
+
+.logout {
+  margin-left: 10px;
+}/*# sourceMappingURL=Layout.module.css.map */

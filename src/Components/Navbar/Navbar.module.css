@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: rgb(107, 107, 108);
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+}
+
+.route {
+  margin: 0 20px;
+}/*# sourceMappingURL=Navbar.module.css.map */
