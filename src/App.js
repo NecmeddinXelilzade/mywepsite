@@ -2,6 +2,7 @@ import Login from "./Components/Login/Login";
 import Router from "./Components/router/Router";
 import {useSelector} from "react-redux";
 import {auth} from "./utils/userAuth";
+import './i18n';
 
 auth()
 
