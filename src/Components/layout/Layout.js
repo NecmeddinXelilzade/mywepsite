@@ -6,7 +6,7 @@ import styles from './Layout.module.scss'
 import {LogoutOutlined, ShoppingCartOutlined} from "@ant-design/icons";
 import BurgerMenu from "../BurgerMenu/Sidebar";
 import Home from "../Home/Home";
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 import i18n from "i18next";
 import Navbar from '../Navbar/Navbar';
 
@@ -33,7 +33,7 @@ const Layout = () => {
         localStorage.removeItem("token");
     }
 
-    function getCurrentDimension(){
+    function getCurrentDimension() {
         return window.innerWidth
 
     }
@@ -47,7 +47,7 @@ const Layout = () => {
         if (screenSize < 769) {
             setGoster(false)
         }
-        return(() => {
+        return (() => {
             window.removeEventListener('resize', updateDimension);
             setGoster(true)
 
@@ -71,49 +71,40 @@ const Layout = () => {
 
     return (
         <>
-            <nav >
-                 <div>
-                     {/* <div>
-                        <Navbar/>
-                     </div> */}
-
-                     <div className={styles.container}>
-                    
-                        <div className={styles.routes}>
-                           <div className={styles.route}>
-                                <Link productsto="/">Products</Link>
-                            </div>
-
-                            <div className={styles.route}>
-                                <Link to="/" >Carusel</Link>
-                            </div>
-                            
-                        </div> 
-                    
-                     <div>
-                          <div className={styles.rightItems}>
-                        <select onChange={onLanguageChange} value={currentLang}>
-                            {
-                                languageOptions.map((language) => <option key={language.value} value={language.value}>{language.label}</option>)
-                            }
-                        </select>
-                        <Link to="/basket">
-                            <ShoppingCartOutlined />
-                        </Link>
-                        <div>{basketProducts.length}</div>
-                        <LogoutOutlined onClick={onLogoutClick} className={styles.logout}/>
+            <nav>
+                <div className={styles.container}>
+                    <div className={styles.routes}>
+                        <div className={styles.route}>
+                            <Link productsto="/">Products</Link>
+                        </div>
+                        <div className={styles.route}>
+                            <Link to="/">Carusel</Link>
+                        </div>
                     </div>
-                     </div>
-                  
+                    <div>
+                        <div className={styles.rightItems}>
+                            <select onChange={onLanguageChange} value={currentLang}>
+                                {
+                                    languageOptions.map((language) => <option key={language.value}
+                                                                              value={language.value}>{language.label}</option>)
+                                }
+                            </select>
+                            <Link to="/basket">
+                                <ShoppingCartOutlined/>
+                            </Link>
+                            <div>{basketProducts.length}</div>
+                            <LogoutOutlined onClick={onLogoutClick} className={styles.logout}/>
+                        </div>
                     </div>
 
-              </div>
+                </div>
+
 
             </nav>
             <Outlet/>
         </>
 
-);
+    );
 };
 
 export default Layout;
