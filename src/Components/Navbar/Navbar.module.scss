@@ -4,8 +4,13 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    background-color: rgb(107, 107, 108);
-
+    background-color: #555;
+   
+    a{
+        color: white;
+         font-size: 20px;
+         text-decoration: none;
+      }
 }
 .left{
     display: flex;
@@ -15,3 +20,4 @@
 .route {
     margin: 0 20px;
   }
+ 

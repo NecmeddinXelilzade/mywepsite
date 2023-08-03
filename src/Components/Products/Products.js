@@ -5,6 +5,8 @@ import {buyProduct, getProductsByCategory, setBasket, setProducts} from '../../r
 import Ratings from './Ratings/Ratings';
 import styles from './Products.module.scss'
 import {HeartOutlined} from "@ant-design/icons";
+import bgimage from '../image/bgimage.jpg'
+import img from '../image/img.jpg'
 
 const Products = () => {
     const dispatch = useDispatch();
@@ -40,11 +42,11 @@ const Products = () => {
 
 
     return (
-        <div>
+        <div >
             <Filters/>
-            <div className={styles.contend}>
-                {searchedProducts.map(product => (
-
+            <div className={styles.back} style={{ backgroundImage: `url(${bgimage})` }}>
+                        <div className={styles.contend} style={{ backgroundImage: `url(${img})` }} >
+                   {searchedProducts.map(product => (
                     <div className={styles.onecart} key={product.id}>
                         <HeartOutlined size={30}
                                        className={styles.like} onClick={() => onProductClick(product)}/>
@@ -59,6 +61,8 @@ const Products = () => {
                     </div>
                 ))}
             </div>
+            </div>
+    
         </div>
     );
 };

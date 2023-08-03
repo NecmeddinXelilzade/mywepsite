@@ -4,7 +4,12 @@
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  background-color: rgb(107, 107, 108);
+  background-color: #555;
+}
+.container a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .left {

@@ -69,38 +69,45 @@ const Layout = () => {
 
   return (
     <>
-      <nav>
-        <div className={styles.container}>
-          <div className={styles.routes}>
-            <Navbar />
-            <div className={styles.route}>
-              <Link to="/products">Products</Link>
-            </div>
-            <div className={styles.route}>
-              <Link to="/">Carusel</Link>
-            </div>
-          </div>
-          <div>
-            <div className={styles.rightItems}>
-              <select onChange={onLanguageChange} value={currentLang}>
-                {languageOptions.map((language) => (
-                  <option key={language.value} value={language.value}>
-                    {language.label}
-                  </option>
-                ))}
-              </select>
-              <Link to="/basket">
-                <ShoppingCartOutlined />
-              </Link>
-              <div>{basketProducts.length}</div>
-              <LogoutOutlined
-                onClick={onLogoutClick}
-                className={styles.logout}
-              />
-            </div>
-          </div>
-        </div>
-      </nav>
+          <nav >
+                 <div>
+                     <div>
+                        <Navbar/>
+                     </div>
+
+                     <div className={styles.container}>
+                    
+                        <div className={styles.routes}>
+                           <div className={styles.route}>
+                                <Link to="/products">Products</Link>
+                            </div>
+
+                            <div className={styles.route}>
+                                <Link to="/Carusel">Carusel</Link>
+                            </div>
+                            
+                        </div> 
+                    
+                     <div>
+                          <div className={styles.rightItems}>
+                        <select onChange={onLanguageChange} value={currentLang}>
+                            {
+                                languageOptions.map((language) => <option key={language.value} value={language.value}>{language.label}</option>)
+                            }
+                        </select>
+                        <Link to="/basket">
+                            <ShoppingCartOutlined />
+                        </Link>
+                        <div>{basketProducts.length}</div>
+                        <LogoutOutlined onClick={onLogoutClick} className={styles.logout}/>
+                    </div>
+                     </div>
+                  
+                    </div>
+
+              </div>
+
+            </nav>
       <Outlet />
     </>
   );

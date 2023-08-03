@@ -11,7 +11,7 @@
    border-radius: 25px;
    margin-right: 10px;
    margin: 20px;
-   background-color: white;
+   background-color: #f1efef;
    position: relative;
 }
 
@@ -37,4 +37,19 @@ cursor: 'pointer',
 .contend{
   display: flex;  
   flex-wrap: wrap;
+  width: 80%;
+    margin: auto;
+    background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
+
+.back{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  width: 100%;
+  
+}
+

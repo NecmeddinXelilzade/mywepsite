@@ -30,7 +30,7 @@ const Filters = () => {
                     categories.map(el => <option key={el.value} value={el.value}>{el.name}</option>)
                 }
             </select>
-            <input type="text" placeholder={placeholder} onChange={onChangeSearch}/>
+            <input className={styles.input} type="text" placeholder={placeholder} onChange={onChangeSearch}/>
         </div>
     );
 };

@@ -6,8 +6,10 @@ import Basket from '../Basket/Basket';
 import Layout from '../layout/Layout';
 // import download from '../img/download.jpg'
 // import Sidebar from '../BurgerMenu/Sidebar';
-import Navbar from '../Navbar/Navbar';
 import styles from './Router.module.scss'
+import Carusel from '../Carusel/Carusel';
+
+
 
 
 const Router = () => {
@@ -21,6 +23,7 @@ const Router = () => {
                         <Route index element={<Home />} />
                         <Route path='products' element={<Products />} />
                         <Route path='basket' element={<Basket />} />
+                        <Route path='carusel' element={<Carusel />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
