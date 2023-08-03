@@ -19,7 +19,6 @@ const Navbar = () => {
                    <Link to='/Contakt'>Contakt</Link>
                  </div>
             </div>
-           
            <div className={styles.right}>
                   <div className={styles.route}>
                       <Link  to='/accaund'> <UserOutlined />Accaund</Link>
