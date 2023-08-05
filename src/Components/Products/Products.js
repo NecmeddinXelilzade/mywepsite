@@ -47,7 +47,7 @@ const Products = () => {
             <div className={styles.back} style={{ backgroundImage: `url(${bgimage})` }}>
                         <div className={styles.contend} style={{ backgroundImage: `url(${img})` }} >
                    {searchedProducts.map(product => (
-                    <div className={styles.onecart} key={product.id}>
+                                  <div className={styles.onecart} key={product.id}>
                         <HeartOutlined size={30}
                                        className={styles.like} onClick={() => onProductClick(product)}/>
                         <img className={styles.img} src={product.image} alt=''/>
@@ -55,10 +55,14 @@ const Products = () => {
                             <div onClick={() => onBuyProduct(product)}>{product.title}</div>
                             <div>{product.category}</div>
                             <div>{product.price}</div>
-                            <Ratings product={product}/>
+                            <div className={styles.raiting}>
+                               <Ratings product={product}/> 
+                            </div>
+                            
                         </div>
+                                   </div>
 
-                    </div>
+   
                 ))}
             </div>
             </div>

@@ -5,9 +5,9 @@
   justify-content: space-between;
   align-items: center;
  flex-direction: row;
-  // position: relative; 
    height: 100px;
   background-color: #f8cb1c
+  
   }
 
 
@@ -19,8 +19,11 @@
 
 .routes {
   @extend .container;
-  // justify-content: space-between;
-
+  a{
+    color: black;
+     font-size: 20px;
+     text-decoration: none;
+  }
 }
 
 
@@ -29,8 +32,29 @@
   justify-content: space-between;
   width: 60%;
   align-items: center;
+  margin-right: 20px;
 }
 
 .logout {
   margin-left: 10px;
+}
+
+.basket{
+  position: relative;
+  margin: 0px 20px;
+}
+
+.number{
+  position: absolute;
+    right:  58px;
+top: 95px;
+font-size: 14px;
+}
+
+.sellect{
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  color: black;
+  font-size: 16px;
 }

@@ -8,14 +8,15 @@ import Layout from '../layout/Layout';
 // import Sidebar from '../BurgerMenu/Sidebar';
 import styles from './Router.module.scss'
 import Carusel from '../Carusel/Carusel';
-
+import Helps from '../Helps/Helps'
+import Accound from '../Accound/Accound'
+import Blog from '../Blog/Blog'
 
 
 
 const Router = () => {
     return (
         <div className={styles.container}>
-            {/* <img src={download}/> */}
                  
                    <BrowserRouter>
                 <Routes>
@@ -24,6 +25,10 @@ const Router = () => {
                         <Route path='products' element={<Products />} />
                         <Route path='basket' element={<Basket />} />
                         <Route path='carusel' element={<Carusel />} />
+                        <Route path='helps' element={<Helps />} />
+                        <Route path='blog' element={<Blog />} />
+                        <Route path='accound' element={<Accound />} />
+                        
                     </Route>
                 </Routes>
             </BrowserRouter>

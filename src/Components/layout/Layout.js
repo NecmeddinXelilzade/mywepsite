@@ -17,7 +17,7 @@ const languageOptions = [
   },
   {
     value: "az",
-    label: "Azerbaijani",
+    label: "Azerbaijan",
   },
 ];
 
@@ -79,26 +79,26 @@ const Layout = () => {
                     
                         <div className={styles.routes}>
                            <div className={styles.route}>
-                                <Link to="/products">Products</Link>
+                                <Link to="/products"> <h4>Products</h4></Link>
                             </div>
 
                             <div className={styles.route}>
-                                <Link to="/Carusel">Carusel</Link>
+                                <Link to="/Carusel"><h4>Carusel</h4></Link>
                             </div>
                             
                         </div> 
                     
                      <div>
                           <div className={styles.rightItems}>
-                        <select onChange={onLanguageChange} value={currentLang}>
+                        <select className={styles.sellect} onChange={onLanguageChange} value={currentLang}>
                             {
                                 languageOptions.map((language) => <option key={language.value} value={language.value}>{language.label}</option>)
                             }
                         </select>
-                        <Link to="/basket">
+                      <Link className={styles.basket} to="/basket">
                             <ShoppingCartOutlined />
                         </Link>
-                        <div>{basketProducts.length}</div>
+                        <div className={styles.number} >{basketProducts.length}</div>
                         <LogoutOutlined onClick={onLogoutClick} className={styles.logout}/>
                     </div>
                      </div>

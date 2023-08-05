@@ -15,11 +15,26 @@
    position: relative;
 }
 
+// .relative{
+//   position: relative;
+//   transform: 1.2;
+// }
+ 
+// .obsl{
+//  position: absolute;
+//  transform: 1;
+// }
+
 .img{ 
     
   width: 150px ;
   padding: 10px 50px ;
-  height: 50%;
+  height: 45%;
+}
+
+.raiting{
+  margin: 0px 20px 10px 20px;
+
 }
 
 .data{
@@ -48,8 +63,6 @@ cursor: 'pointer',
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  // background-attachment: fixed;
   width: 100%;
-  
 }
 
