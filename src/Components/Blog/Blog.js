@@ -1,13 +1,11 @@
 import React from 'react';
+import styles from './Blog.module.scss'
 
 const Blog = () => {
     return (
         <div>
-            <div>
-                <h4>Suallar ve cavablar</h4>
-                <div>
-                    <span>1.Sizdən hissəli ödənişlə məhsul almaq mümkündür?</span>
-                </div>
+            <div >
+                dutdetu
             </div>
         </div>
     );

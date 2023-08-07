@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <h1>{t("home")}</h1>
             <div>{t('products')}</div>
-        </div>
+      </div>
     );
 };
 

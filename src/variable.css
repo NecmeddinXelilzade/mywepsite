@@ -1,0 +1,13 @@
+:export {
+  breakpoints_xs: 0;
+  breakpoints_sm: 361;
+  breakpoints_md: 769;
+  breakpoints_lg: 1367;
+  breakpoints_xl: 1537;
+  breakpoints_xxl: 1921;
+}
+
+.dark {
+  --bg-color:black;
+  --text-color:white;
+}/*# sourceMappingURL=variable.css.map */

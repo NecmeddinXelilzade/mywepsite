@@ -7,10 +7,13 @@ import styles from './Products.module.scss'
 import {HeartOutlined} from "@ant-design/icons";
 import bgimage from '../image/bgimage.jpg'
 import img from '../image/img.jpg'
+import { useTranslation } from "react-i18next";
 
 const Products = () => {
     const dispatch = useDispatch();
     const {products, currentCategory, searchValue, basketProducts} = useSelector(state => state.products);
+
+    const { t } = useTranslation();
 
     useEffect(() => {
         dispatch(getProductsByCategory(currentCategory));
@@ -49,7 +52,7 @@ const Products = () => {
                    {searchedProducts.map(product => (
                                   <div className={styles.onecart} key={product.id}>
                         <HeartOutlined size={30}
-                                       className={styles.like} onClick={() => onProductClick(product)}/>
+                                       className={styles.like}  onClick={() => onProductClick(product)}/>
                         <img className={styles.img} src={product.image} alt=''/>
                         <div className={styles.data}>
                             <div onClick={() => onBuyProduct(product)}>{product.title}</div>
@@ -58,6 +61,12 @@ const Products = () => {
                             <div className={styles.raiting}>
                                <Ratings product={product}/> 
                             </div>
+                            <div>
+            {/* <h1>{t("home")}</h1>
+            <div>{t('products')}</div>
+            <div>{t('jeweler')}</div> */}
+            
+      </div>
                             
                         </div>
                                    </div>

@@ -10,7 +10,7 @@
   border: 1px solid black;
   border-radius: 25px;
   margin-right: 10px;
-  margin: 20px;
+  margin: 35px;
   background-color: #f1efef;
   position: relative;
 }
@@ -40,7 +40,7 @@
 .contend {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 995px;
   margin: auto;
   background-size: cover;
   background-position: center;
@@ -52,4 +52,5 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  margin: auto;
 }/*# sourceMappingURL=Products.module.css.map */

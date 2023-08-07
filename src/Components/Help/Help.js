@@ -1,17 +1,17 @@
 import React from 'react';
+import Home from '../Home/Home';
 
-const Helps = () => {
+const Help = () => {
     return (
         <div>
         <div>
             <h4>Suallar ve cavablar</h4>
-            {/* <div>
+            <div>
                 <span>1.Sizdən hissəli ödənişlə məhsul almaq mümkündür?</span>
-            </div> */}
+            </div>
         </div>
     </div>
-
     );
 }
 
-export default Helps;
+export default Help;

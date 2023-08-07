@@ -7,6 +7,11 @@
   breakpoints_xxl: 1921;
 }
 
+.dark {
+  --bg-color:black;
+  --text-color:white;
+}
+
 .container, .routes {
   display: flex;
   justify-content: space-between;

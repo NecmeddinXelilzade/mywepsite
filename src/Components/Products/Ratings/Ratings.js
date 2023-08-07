@@ -37,7 +37,7 @@ const Ratings = props => {
             <div className={styles.container}>
                 {stars.map((el, index) => {
                     return (
-                        <FaStar
+                        <FaStar  
                             key={index}
                             size={30}
                             style={{

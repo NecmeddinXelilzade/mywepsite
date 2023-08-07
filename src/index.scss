@@ -1,3 +1,5 @@
+@import 'responsive';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,6 +9,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+ 
 }
 
 code {
